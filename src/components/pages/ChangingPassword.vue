@@ -3,7 +3,7 @@
         <form action="#" class="allPassword">
             <div>
                 <label 
-                    for="password"
+                    for="currentPassword"
                 >
                     <span >Текущий пароль</span>
                 </label>
@@ -11,7 +11,7 @@
                     v-model="groupPassword.currentPassword" 
                     @blur="v$.groupPassword.currentPassword.$touch" 
                     type="password" 
-                    id="password" 
+                    id="currentPassword" 
                     placeholder="Текущий пароль"
                 >
             </div>
@@ -24,7 +24,7 @@
             <br>
             <div>
                 <label 
-                    for="password"
+                    for="newPassword"
                 >
                     <span >Новый пароль</span>
                 </label>
@@ -32,7 +32,7 @@
                     v-model="groupPassword.newPassword" 
                     @blur="v$.groupPassword.newPassword.$touch" 
                     type="password" 
-                    id="password" 
+                    id="newPassword" 
                     placeholder="Новый пароль"
                 >
             </div>
@@ -45,7 +45,7 @@
             <br>
             <div>
                 <label 
-                    for="password"
+                    for="confirmPassword"
                 >
                     <span >Подтверждение пароля</span>
                 </label>
@@ -53,7 +53,7 @@
                     v-model="groupPassword.confirmPassword" 
                     @blur="v$.groupPassword.confirmPassword.$touch" 
                     type="password" 
-                    id="password" 
+                    id="confirmPassword" 
                     placeholder="Подтверждение пароля"
                 >
             </div>
