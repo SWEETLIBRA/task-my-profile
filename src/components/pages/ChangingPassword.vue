@@ -1,6 +1,7 @@
 <template>
     <div>
         <form action="#" class="allPassword">
+            <h3 class="block">Изменение пароля</h3>
             <div>
                 <label 
                     for="currentPassword"
@@ -121,5 +122,8 @@ export default {
     }
     .inputError {
         color: red;
+    }
+    .block {
+        margin: 0 0 10px;
     }
 </style>

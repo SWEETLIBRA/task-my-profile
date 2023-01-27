@@ -1,13 +1,14 @@
 <template>
     <div class="blockAvatar">
+        <h3 class="block">Изменение аватара</h3>
         <img class="avatar" :src="require('../../../public/assets/User-Profile-PNG-High-Quality-Image.png')" />
         <div class="changeAvatar"> 
-            <!-- <button type="file" class="chaning-avatar">Изменить аватар</button> -->
+            <!-- <button type="submit" class="chaning-avatar">Изменить аватар</button> -->
             <label for="avatar"><span>Изменить аватар</span></label>
             <input type="file" id="avatar">
             
             <br>
-            <button type="submit" class="delete-avatar">Удалить аватар</button>
+            <button type="submit">Удалить аватар</button>
         </div>
     </div>
 </template>
@@ -27,6 +28,7 @@ export default {
     padding: 20px;
     border-radius: 10px;
     box-sizing: border-box;
+    padding-top: 20px;
 }
 
  .avatar {
@@ -51,5 +53,10 @@ export default {
     .blockAvatar input {
         border: none;
         box-shadow: 10px 2px 5px rgb(100, 101, 145);
+        margin-bottom: 10px;
+    }
+
+    .block {
+        margin: 0;
     }
 </style>

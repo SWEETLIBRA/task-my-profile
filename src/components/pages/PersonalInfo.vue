@@ -1,6 +1,7 @@
 <template>
     <div>
         <form @submit="prevent" action="#" class="form">
+            <h3 class="block">Персональная информация</h3>
             <div>
                 <label 
                     for="fullName" 
@@ -150,5 +151,8 @@ export default {
     }
     .inputError {
         color: red;
+    }
+    .block {
+        margin: 0 0 10px;
     }
 </style>
